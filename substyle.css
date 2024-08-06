@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    background: linear-gradient(to bottom, white whitesmoke);
+    font-family: Rubik;
+    width: 90%;
+    height: 100vh;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+
+@font-face {
+    font-family: Spare Lover;
+    src: url(fonts/Spare\ Lover.otf);
+}
+
+@font-face {
+    font-family: Aikabon;
+    src: url(fonts/Aikabon-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: Groste;
+    src: url(fonts/GROSTE.otf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url(fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+
+.logo{
+    width: 90px;
+    height: 90px;
+    margin: 20px;
+    border: 1px solid orangered;
+    border-radius: 45px;
+    background-color: white;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.logo:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.logo:active{
+    background-color: white;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.navbar ul{
+margin-top: 3%;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 10px;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1px;
+    transition: all .4s ease;
+}
+
+.navbar ul li a:hover{
+    color: orangered;
+}
+
+.navbar ul li a:active{
+    color: black;
+}
+
+.port h1{
+font-size: 2.8rem;
+display: inline;
+border-bottom: 2px solid orangered;
+margin-bottom: 2rem;
+letter-spacing: 2px;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.7s ease;
+
+}
+.avatar figure img{
+    position: relative;
+    width: 600px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    justify-content: center;
+    transition: all 0.7s ease;
+
+}
+
+.port h3{
+margin-top: 1rem;
+font-size: 2.3rem;
+letter-spacing: 3px;
+margin-bottom: 1rem;
+}
+
+.port span{
+    color: orangered;
+    letter-spacing: 2px;
+}
+
+.port p{
+    text-align: justify;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.goals h3{
+    color: orangered;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.goals p{
+    letter-spacing: 2px;
+    text-align: justify;
+    padding: 1rem;
+    background-color: rgb(255, 68, 0);
+    color: white;
+    font-size: 1rem;
+    border-radius: 1rem;
+    margin: 0.8rem;
+
+}
+
+summary{
+    animation: summary-animation 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+@keyframes summary-animation{
+0%{
+    transform: scale(1)
+}
+
+100%{
+    transform: scale(1.1);
+}
+
+}
+
+
+.icons{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-85%);
+    display: flex;
+    flex-direction: column;
+    right: -100%;
+    background: orangered;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.2);
+    transition: all 0.7s ease;
+}
+
+.head:hover .icons{
+    right: 0;
+
+}
+
+.icons a{
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.explore{
+    text-align: center;
+
+}
+
+.icons-bottom{
+    padding: 1rem;
+}
+
+.icons-bottom a{
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: black;
+    transition: all 0.7s ease;
+}
+
+.icons-bottom a:hover{
+    color: orangered;
+}
+
+footer{
+    text-align: center;
+}
+
+/*==============SIDEBAR====================*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar ul li{
+    width: 100%;
+    padding: 15%;
+
+}
+
+.sidebar ul li a{
+    width: 100%;
+
+}
+
+.nav .menu-butn{
+    display: none;
+}
+
+
+
+
+
+/*==============Responsive Designs====================*/
+
+
+/*==============Tablets====================*/
+@media (max-width: 950px) {
+    .nav .hideOnMobile{
+        display: none;
+    }
+
+    .nav .menu-butn{
+        display: block;
+    }
+    
+    
+    
+}
+
+/*==============Mobile Phones====================*/
+
+
+@media (max-width: 450px) {
+
+    body{
+        width: 90%;
+        height: 100%;
+    }
+
+
+
+    .nav .menu-butn{
+        display: block;
+    }
+
+
+    .sidebar{
+        width: 100%;
+    }
+    
+    .sidebar li {
+        width: 100%;
+
+    }
+
+    .sidebar li a{
+        width: 100%;
+        display: block;
+        margin: 10px 0 auto 10px;
+
+    }
+
+    .sidebar li a:hover{
+        background-color: grey;
+
+    }
+
+    .logo{
+        width: 48px;
+        height: 48px;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .port h1{
+        font-size: 2rem;
+        display: inline;
+        border-bottom: 2px solid orangered;
+        margin-bottom: 1.5rem;
+        letter-spacing: 1.5px;
+        }
+        
+        .head{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.7s ease;
+        
+        }
+        .avatar figure img{
+            position: relative;
+            width: 300px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            justify-content: center;
+            transition: all 0.7s ease;
+            margin-top: 3rem;
+        }
+
+        figcaption{
+            font-size: 0.9rem;
+        }
+        
+        .port h3{
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+        }
+        
+        .port span{
+            color: orangered;
+            letter-spacing: 2px;
+        }
+        
+        .port p{
+            text-align: justify;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+        
+        .goals h3{
+            color: orangered;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .goals p{
+            letter-spacing: 2px;
+            text-align: justify;
+            padding: 0.8rem;
+            background-color: rgb(255, 68, 0);
+            color: white;
+            font-size: 1rem;
+            border-radius: 1rem;
+            margin: 0.8rem;
+        
+        }
+        
+        summary{
+            animation: summary-animation 0.7s ease-in-out;
+            transition: all 0.7s ease-in-out;
+        }
+        
+        @keyframes summary-animation{
+        0%{
+            transform: scale(1)
+        }
+        
+        100%{
+            transform: scale(1.1);
+        }
+        
+        }
+        
+        .icons{
+            display: none;
+        }
+        
+        .head:hover .icons{
+            right: 0;
+        
+        }
+        
+        .icons a{
+            padding: 1rem;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .explore{
+            font-size: 0.7rem;
+            text-align: center;
+        
+        }
+        
+        .icons-bottom{
+            padding: 0.7rem;
+        }
+        
+        .icons-bottom a{
+            font-size: 1.4rem;
+            margin: 0.5rem;
+            color: black;
+            transition: all 0.7s ease;
+        }
+        
+        .icons-bottom a:hover{
+            color: orangered;
+        }
+        
+        footer{
+            text-align: center;
+            font-size: 0.6rem;
+        }
+        
+}

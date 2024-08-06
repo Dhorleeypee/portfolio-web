@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    background-image: url(images/3.jpg);
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Rubik;
+    width: 100%;
+    height: 100%;
+
+}
+
+.main{
+    margin: 0 20px;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: Spare Lover;
+    src: url(fonts/Spare\ Lover.otf);
+}
+
+@font-face {
+    font-family: Aikabon;
+    src: url(fonts/Aikabon-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: Groste;
+    src: url(fonts/GROSTE.otf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url(fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+
+.logo{
+    width: 90px;
+    height: 90px;
+    margin: 20px;
+    border: 1px solid orangered;
+    border-radius: 45px;
+    background-color: white;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.logo:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.logo:active{
+    background-color: white;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.navbar ul{
+margin-top: 3%;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 10px;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+
+.navbar ul li a:hover{
+    color: orangered;
+}
+
+.navbar ul li a:active{
+    color: black;
+}
+
+
+.hire{
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.info{
+    max-width: 100%;
+    margin: 100px 30px;
+    font-weight: bold;
+
+}
+
+.info h3{
+    font-family: Roboto;
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+
+
+}
+.info p {
+    font-family: Roboto;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.info span{
+    color: orangered;
+}
+
+.hire .model{
+    width: 100%;
+    text-align: center;
+}
+
+.model img{
+    background: linear-gradient(rgba(255, 166, 0, 0.699) 50%, rgba(255, 68, 0, 0.438) 100%) right;
+    border: 1px solid orangered;
+    max-width: 50%;
+    max-height: auto;
+    border-radius: 50%;
+}
+
+.info a{
+    font-family: Rubik;
+    font-size: 15px;
+    padding: 10px 18px;
+    color: grey;
+    border: 2px solid orangered;
+    border-radius: 15px;
+    text-decoration: none;
+    color: orangered;
+    transition: all .4s ease;
+}
+
+.info a:hover{
+    background-color: orangered;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+}
+
+.info a:active{
+    background-color: white;
+}
+
+.icons{
+    text-align: center;
+    padding: 10px;
+}
+
+.icons a{
+    color: orangered;
+}
+
+.icons ion-icon{
+    color: black;
+    font-size: 30px;
+    margin-right: 10px;
+    transition: all 0.4s ease;
+}
+
+.icons ion-icon:hover{
+    color: orangered;
+}
+
+
+/*==============SIDEBAR====================*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar ul li{
+    width: 100%;
+    padding: 15%;
+
+}
+
+.sidebar ul li a{
+    width: 100%;
+
+}
+
+.nav .menu-butn{
+    display: none;
+}
+
+
+
+
+
+/*==============Responsive Designs====================*/
+
+
+/*==============Tablets====================*/
+@media (max-width: 950px) {
+    .nav .hideOnMobile{
+        display: none;
+    }
+
+    .nav .menu-butn{
+        display: block;
+    }
+    
+    
+    
+}
+
+/*==============Mobile Phones====================*/
+
+
+@media (max-width: 450px) {
+
+    body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: auto;
+    }
+
+
+    .nav .menu-butn{
+        display: block;
+    }
+
+
+    .sidebar{
+        width: 100%;
+    }
+    
+    .sidebar li {
+        width: 100%;
+
+    }
+
+    .sidebar li a{
+        width: 100%;
+        display: block;
+        margin: 10px 0 auto 10px;
+
+    }
+
+    .sidebar li a:hover{
+        background-color: grey;
+
+    }
+
+    .logo{
+        width: 48px;
+        height: 48px;
+    }
+
+.hire{
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+}
+
+.info{
+    max-width: 100%;
+    margin: 100px 30px;
+    font-weight: bold;
+
+}
+
+.info h3{
+    font-family: Roboto;
+    font-size: 33px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+
+
+}
+.info p {
+    font-family: Roboto;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.info span{
+    color: orangered;
+    font-size: 38px;
+}
+
+.hire .model{
+    width: 100%;
+    align-content: center;
+}
+
+.model img{
+    background: linear-gradient(rgba(255, 166, 0, 0.884) 50%, rgba(255, 68, 0, 0.521) 100%) right;
+    border: 1px solid orangered;
+    max-width: 70%;
+    max-height: auto;
+    border-radius: 50%;
+
+}
+
+.info a{
+    font-family: Rubik;
+    font-size: 12px;
+    padding: 10px 18px;
+    color: grey;
+    border: 2px solid orangered;
+    border-radius: 15px;
+    text-decoration: none;
+    color: orangered;
+    transition: all 0.4s ease;
+}
+
+.info a:hover{
+    background-color: orangered;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+}
+
+.info a:active{
+    background-color: white;
+}
+
+.icons{
+    text-align: center;
+    padding: 7px;
+}
+
+.icons a{
+    color: orangered;
+}
+
+.icons ion-icon{
+    color: black;
+    font-size: 25px;
+    margin-right: 7px;
+    transition: all 0.4s ease;
+}
+
+.icons ion-icon:hover{
+    color: orangered;
+}
+
+
+}

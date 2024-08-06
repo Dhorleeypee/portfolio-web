@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="images/deeconceptlogo.png" sizes="16x16 32x32 48x48 64x64" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/deeconceptlogo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/deeconceptlogo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/deeconceptlogo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/deeconceptlogo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/deeconceptlogo.png">
+    <link rel="manifest" href="images/deeconceptlogo.png">
+
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><img src="images/deeconceptlogo.png" alt="DeeConcept Logo" class="logo"></a>
+    
+        <ul class="sidebar">
+            <li onclick="hideSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 512 512"><path d="M289.94,256l95-95A24,24,0,0,0,351,127l-95,95-95-95A24,24,0,0,0,127,161l95,95-95,95A24,24,0,1,0,161,385l95-95,95,95A24,24,0,0,0,385,351Z"/></svg></a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="designs.html">MY DESIGNS</a></li>
+            <li><a href="webwork.html">MY WEBWORKS</a></li>
+            <li><a href="contact.html">CONTACT ME</a></li>
+        </ul>
+
+    
+        <ul class="nav">
+            <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+            <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+            <li class="hideOnMobile"><a href="designs.html">MY DESIGNS</a></li>
+            <li class="hideOnMobile"><a href="webwork.html">MY WEBWORKS</a></li>
+            <li class="hideOnMobile"><a href="contact.html">CONTACT ME</a></li>
+            <li class="menu-butn" onclick="showSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 512 512"><line x1="88" y1="152" x2="424" y2="152" style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:48px"/><line x1="88" y1="256" x2="424" y2="256" style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:48px"/><line x1="88" y1="360" x2="424" y2="360" style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:48px"/></svg></a></li>
+        </ul>
+    </div>
+
+    <section  class="contact">
+        <div  class="contact-div">
+            <aside  class="contact-aside">
+                <div  class="aside-image">
+                    <img src="images/img5.jpg" width="100%">
+                </div>
+                <h3>Contact Me</h3>
+                <p>"Thanks for stopping by. I'd love to connect and explore potential collaborations or projects. Please feel free to reach out to me directly via email or through this contact form.<br><span>I look forward to hearing from you and discussing how we can create something amazing together!"</span></p>
+                <ul  class="contact-details">
+                    <li>
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        <h5>+2349037555898</h5>
+
+                    </li>
+
+                    <li>
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <h5>dhorleeypee02@gmail.com</h5>
+                    </li>
+
+                    <li>
+                        <ion-icon name="location"></ion-icon>
+                        <h5>Abeokuta, Nigeria.</h5>
+                    </li>
+                    
+                </ul>
+
+                <ul  class="socials">
+                    <li>
+                        <a href="https://x.com/Dhorleeypee23?t=FR0mTgeOfefGr5BNQcVGoA&s=09" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/dolapo.olatunde.5" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/dhorleeypee?igsh=ZGUzMzM3NWJiOQ==" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+
+                    </li>
+
+                </ul>
+
+
+            </aside>
+
+            <form action="https://formspree.io/f/mpzvvnaj" method="post">
+                <div class="form-name">
+                    <input type="text" name="First Name" placeholder="First Name" required>
+                    <input type="text" name="Last Name" placeholder="Last Name" required>
+
+                </div>
+                <input type="email" name="Email Address" placeholder="Your Email Address" required>
+                <textarea name="Message" rows="7" placeholder="Type Your Message Here" required></textarea>
+                <div class="btn-div">
+                <button type="submit" class="btn">Send Message</button>
+                <button type="reset" class="btn">Reset</button>
+            </div>
+
+            </form>
+
+
+        </div>
+
+    </section>
+    <footer class="foot">
+        <p style="text-align: center; padding: 1rem;">&copy; DeeConcept 2024</p>  
+    </footer>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    function showSideBar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display =  "flex"
+    }
+
+    function hideSideBar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display =  "none"
+    }
+
+</script>
+
+</body>
+</html>
